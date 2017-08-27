@@ -26,6 +26,8 @@ let g:notmuch_search_maps = {
 	\ '=':		'search_refresh()',
 	\ '?':		'search_info()',
 	\ 'c':		'compose()',
+	\ 'D':		'search_tag("-inbox -unread +deleted")',
+	\ 'S':		'search_tag("-inbox -unread +spam")',
 	\ }
 
 let g:notmuch_show_maps = {
@@ -41,6 +43,8 @@ let g:notmuch_show_maps = {
 	\ '?':		'show_info()',
 	\ '<Tab>':	'show_next_msg()',
 	\ 'c':		'compose()',
+	\ 'D':		'show_tag("-inbox -unread +deleted")',
+	\ 'S':		'show_tag("-inbox -unread +spam")',
 	\ }
 
 let g:notmuch_compose_maps = {
